@@ -1,0 +1,105 @@
+.grid-container {
+  margin: 20px;
+}
+
+mat-sidenav-container {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding-bottom: 64px;
+  height: 100%;
+}
+
+.divider-vertical {
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-weight: 200;
+  padding-right: 10px;
+}
+
+.titulo {
+  margin-top: 1em;
+  font-size: 2.6em;
+  color: #3F51B5;
+  font-weight: 600;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  background-color: #a9e0fa;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-header {
+  text-align: center;
+  color:#303F9F;
+  justify-content: center;
+}
+
+.dashboard-card-header-titulo {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.dashboard-card-content {
+  margin-top: 15px;
+  text-align: center;
+  color: #303F9F;
+  font-weight: bold;
+  font-size: medium;
+}
+
+mat-toolbar {
+  position: fixed;
+  background-color: #3f51b5;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.logo {
+  max-height: 36px;
+}
+
+.white {
+  color: white;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+a {
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.divider-portal {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.title-group {
+  padding-left: 20px;
+}
+
+.card-template {
+  margin: 15px 15px;
+}

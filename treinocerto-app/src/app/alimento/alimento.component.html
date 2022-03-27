@@ -1,0 +1,29 @@
+<mat-toolbar class="mat-elevation-z3" style="font-size: medium;">
+  <span>
+    <button matTooltip="Home" mat-icon-button class="white">
+      <mat-icon>home</mat-icon>
+    </button>
+    <span class="white">Treino Certo</span>
+  </span>
+  <span class="white divider-portal">|</span>
+  <span>
+
+  </span>
+  <span class="title-group">
+    <a routerLink="cadastro">Cadastro</a>
+  </span>
+  <span class="title-group">
+    <a routerLink="pesquisa">Pesquisa</a>
+  </span>
+
+  <span class="spacer"></span>
+  <h1 class="white">Alimentos</h1>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav-content style="background-color: #f1f1f1" fxFlexFill>
+    <mat-card class="card-template">
+      <router-outlet></router-outlet>
+    </mat-card>
+  </mat-sidenav-content>
+</mat-sidenav-container>

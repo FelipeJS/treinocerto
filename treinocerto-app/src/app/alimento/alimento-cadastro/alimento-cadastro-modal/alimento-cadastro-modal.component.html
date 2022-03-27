@@ -1,0 +1,57 @@
+<form [formGroup]="alimentoForm" novalidate>
+  <h1 mat-dialog-title class="titulo">Adicionar Alimento</h1>
+
+  <mat-progress-bar mode="indeterminate" *ngIf="carregando"></mat-progress-bar>
+
+  <div mat-dialog-content class="container">
+    <div>
+      <mat-form-field>
+        <mat-label>Nome</mat-label>
+        <input matInput formControlName="nome" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Calorias</mat-label>
+        <input matInput formControlName="kcal" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Medida</mat-label>
+        <input matInput formControlName="medida" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Carboidrato</mat-label>
+        <input matInput formControlName="carboidrato" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Proteína</mat-label>
+        <input matInput formControlName="proteina" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Gordura</mat-label>
+        <input matInput formControlName="gordura" />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Sódio</mat-label>
+        <input matInput formControlName="sodio" />
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div mat-dialog-actions align="center">
+    <button mat-raised-button (click)="onNoClick()" color="warn">
+      <mat-icon>close</mat-icon>
+      Cancelar
+    </button>
+
+    <button mat-raised-button [disabled]="alimentoForm.invalid" [mat-dialog-close]="alimentoForm.getRawValue()"
+      color="primary">
+      <mat-icon>save</mat-icon>
+      Salvar
+    </button>
+  </div>
+</form>
